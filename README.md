@@ -1,6 +1,6 @@
 ## Scala and sbt Dockerfile
 
-**Dockerfile** of [Scala](http://www.scala-lang.org) and [sbt](http://www.scala-sbt.org).
+**Dockerfile** for Jenkins slave with [Scala](http://www.scala-lang.org) and [sbt](http://www.scala-sbt.org).
 
 
 ### Base Docker Image
