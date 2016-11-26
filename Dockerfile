@@ -16,6 +16,8 @@ RUN curl -L -o sbt-$SBT_VERSION.deb http://dl.bintray.com/sbt/debian/sbt-$SBT_VE
     && rm sbt-$SBT_VERSION.deb \
     && apt-get update \
     && apt-get install sbt \
-    && sbt sbtVersion
+    && sbt sbtVersion \
+    && apt-get install -y dnsutils build-essential libssl-dev openssl sudo \
+    && echo "jenkins ALL=NOPASSWD: ALL" >> /etc/sudoers
 
 WORKDIR /root
