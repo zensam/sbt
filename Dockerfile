@@ -2,8 +2,8 @@ FROM openjdk:8
 
 # FROM java:8
 
-ENV SCALA_VERSION 2.12.7
-ENV SBT_VERSION 1.2.6
+ENV SCALA_VERSION 2.12.6
+ENV SBT_VERSION 1.2.1
 
 # Install scala
 RUN curl -fsL http://downloads.typesafe.com/scala/$SCALA_VERSION/scala-$SCALA_VERSION.tgz | tar xfz - -C /root/ \
